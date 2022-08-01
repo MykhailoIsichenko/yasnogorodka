@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: #F7F7F7;
+}
+
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slick-prev {
+    left: 2%;
+    z-index: 20;
+}
+
+.slick-next {
+    right: 2%;
+    z-index: 21;
+}
