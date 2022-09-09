@@ -1,0 +1,26 @@
+@mixin ff($name, $filename, $weight, $style) {
+    font-family: $name;
+    // src: url('../fonts/#{$filename}.woff2') format('woff2'), 
+    //      url('../fonts/#{$filename}.woff') format('woff');
+    src: url('../fonts/#{$filename}.woff2') format('woff2');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap; 
+}
+
+
+
+
+@font-face { @include ff('Montserrat', Montserrat-Regular,  400, normal);} 
+
+body {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    color: green;
+}
+
